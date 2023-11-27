@@ -85,7 +85,7 @@ fn main() {
         } else {
             std::thread::sleep(std::time::Duration::from_secs(1));
             let new_card = deck.draw();
-            println!("Banker\n{} {} \n {} \r", player[0], player[1], new_card);
+            println!("Banker\n{} {} \n {} \r", banker[0], banker[1], new_card);
             banker_sum = banker_sum + Into::<i32>::into(new_card.value);
             if banker_sum >= 10 {
                 banker_sum = banker_sum - 10;
