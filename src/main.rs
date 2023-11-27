@@ -58,9 +58,6 @@ fn main() {
     } else if banker_sum == 8 && player_sum < banker_sum {
         println!("Banker Wins");
         exit(0);
-    } else if banker_sum == player_sum {
-        println!("Tie");
-        exit(0);
     }
 
     if player_sum < 6 && banker_sum < 8 {
